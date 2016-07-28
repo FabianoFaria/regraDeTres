@@ -7,8 +7,13 @@
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 		<link rel="stylesheet" href="css/regra_tres.css" type="text/css">
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.min.js"></script>
+		<script type="text/javascript" src="js/plugins.js"></script>
+		<script type="text/javascript" src="js/jquery.maskMoney.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
-
+		
+		
+		<script type="text/javascript" src="js/sweetalert.min.js"></script>
 
 	</head>
 	<body>
@@ -41,18 +46,18 @@
 		        		<div class="row">
 
 		        			<div class="col-md-4">
-			        			<label >Teste
+			        			<label >Número A 
 	 							
-	 								<input type="text" name="numeroX" >
+	 								<input id="numeroA" type="text" name="numeroA" >
 
 		 						<label>
 		 					</div>
 
 		 					<div class="col-md-4">
 
-		 						<label> Teste
+		 						<label> Número B
 
-		 							<input type="text" name="numeroX" >
+		 							<input id="numeroB" type="text" name="numeroB" >
 
 	 							</label>
 
@@ -60,7 +65,7 @@
 
 	 						<div class="col-md-4">
 
-	 							<label >Teste
+	 							<label > 
 	 							
 
 		 						<label>
@@ -73,18 +78,18 @@
 
 
 		        			<div class="col-md-4">
-			        			<label >Teste
+			        			<label >Número C
 	 							
-	 								<input type="text" name="numeroX" >
+	 								<input id="numeroC" type="text" name="numeroC" >
 
 		 						<label>
 		 					</div>
 
 		 					<div class="col-md-4">
 
-		 						<label> Teste
+		 						<label> Número D
 
-		 							<input type="text" name="numeroX" >
+		 							<input id="numeroD" type="text" name="numeroD" disabled>
 
 	 							</label>
 
@@ -92,8 +97,9 @@
 
 	 						<div class="col-md-4">
 
-	 							<label >Teste
-	 							
+	 							<label >
+	 								
+	 								<button id="btnGerarResultados" class="btn btn-default" type="submit">Calcular</button>
 
 		 						<label>
 
@@ -119,3 +125,16 @@
       	</div>
 	</body>
 </html>
+
+<script type="text/javascript">
+
+	$(function(){
+		$('#numeroA').mask('?99999');
+		$('#numeroB').mask('?99999');
+		$('#numeroC').mask('?99999');
+
+
+
+	});
+
+</script>
