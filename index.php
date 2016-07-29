@@ -135,6 +135,63 @@
 
 
 
+		$('#btnGerarResultados').click(function(e){
+
+ 			e.preventDefault();
+
+			// VALIDAÇÃO DO FORMULÁRIO DE CADASTRO
+			$('#formRegraTres').validate({
+		        rules:{
+					numeroA: {
+						required: true
+					},
+					numeroB: {
+						required: true,
+						
+					},
+					numeroC: {
+						required: true,
+					}
+		        },
+		        messages:{
+		        	numeroA: {
+		        		required: "Campo obrigatório."
+		        	},
+		        	numeroB: {
+		        		required: "Campo obrigatório.",
+		        		
+		        	},
+		        	numeroC: {
+		        		required: "Campo obrigatório.",
+		        	}
+		        }
+		    });
+
+		    if($("#formRegraTres").valid()){
+
+		    	console.log("Validado!");
+
+		    	//Regra primaria A * D / C * D 
+
+		    	var numA = $('#numeroA').val();
+		    	var numB = $('#numeroB').val();
+		    	var numC = $('#numeroC').val();
+		    	var numD = 0;
+
+		    	numD = (numB * numC)/numA;
+
+		    	$('#numeroD').val(numD);
+
+		  //   	 $('#listaModulosEscolhidos option').each(function(){
+				// 	$(this).attr('selected', 'selected');
+				// });
+
+		  //   	$("#editarUsuario").submit();
+
+			}
+
+ 		});
+
 	});
 
 </script>
