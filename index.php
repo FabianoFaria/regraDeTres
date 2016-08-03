@@ -46,6 +46,41 @@
 		        		<div class="row">
 
 		        			<div class="col-md-4">
+			        			<label >Unidade primaria
+	 							
+	 								<select id="medidaPrimaria">
+	 									<option value=" " >Selecione...</option>
+	 									<option value="1">Metros</option>
+	 									<option value="2">Quilos</option>
+	 									<option value="3">Litros</option>
+	 								</select>
+
+		 						<label>
+		 					</div>
+
+		 					<div class="col-md-4">
+
+		 						<label >Unidade secundaria
+	 							
+	 								<select id="medidaPrimaria">
+	 									<option value=" " >Selecione...</option>
+	 									<option value="1">Metros</option>
+	 									<option value="2">Quilos</option>
+	 									<option value="3">Litros</option>
+	 								</select>
+
+		 						<label>
+
+		 					</div>
+
+		 					<div class="col-md-4">
+
+		 					</div>
+		        		</div>
+
+		        		<div class="row">
+
+		        			<div class="col-md-4">
 			        			<label >Número A 
 	 							
 	 								<input id="numeroA" type="text" name="numeroA" >
