@@ -51,9 +51,10 @@
 	 							
 	 								<select id="medidaPrimaria" name="medidaPrimaria" class="form-control ">
 	 									<option value="" >Selecione...</option>
-	 									<option value="1">Metros</option>
+	 									<option value="1">Número</option>
 	 									<option value="2">Quilos</option>
 	 									<option value="3">Litros</option>
+	 									<option value="4">Metros</option>
 	 								</select>
 
 		 						<label>
@@ -65,9 +66,10 @@
 	 							
 	 								<select id="medidaSecundaria" name="medidaSecundaria" class="form-control">
 	 									<option value="" >Selecione...</option>
-	 									<option value="1">Metros</option>
+	 									<option value="1">Número</option>
 	 									<option value="2">Quilos</option>
 	 									<option value="3">Litros</option>
+	 									<option value="4">Metros</option>
 	 								</select>
 
 		 						<label>
@@ -222,7 +224,7 @@
 
 			var medsec 	= $('#medidaSecundaria').val();
 
-			switch(medpri){
+			switch(medsec){
 				case '1' :
 					$('#numeroB').mask('?999999999999999');		
 				break;
