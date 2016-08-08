@@ -4,6 +4,7 @@
 		<title> Regra de 3 fácil</title>
 
 		<link rel="stylesheet" href="css/regra_tres.css" type="text/css">
+		<link rel="stylesheet" href="css/main1.css" type="text/css">
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 		<link rel="stylesheet" href="css/bootstrap-switch.min.css" type="text/css">
 		
